@@ -183,6 +183,7 @@ function acquireId(target) {
 
 function handleExpandBookmark() {
     $('main').on('click', '.bookmark-container', event => {
+        console.log('one clicked');
         const id = acquireId(event.currentTarget);
         const item = store.findById(id);
         const itemConfig = {expanded: !item.expanded};
