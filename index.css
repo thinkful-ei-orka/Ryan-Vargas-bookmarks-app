@@ -1,0 +1,336 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    background-image: url('https://oscarsplacenyc.com/wp-content/uploads/2017/07/Modern-Storage-Cabinets.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100%;
+    min-width: 100%;
+}
+
+h1 {
+    text-align: center;
+    min-width: 250px;
+    color: white;
+}
+
+
+.upper-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4px;
+    border: 1px solid black;
+    overflow: visible;
+}
+
+.new-bookmark-button {
+    width: 45%;
+}
+
+.bookmark-filter-menu {
+    width: 45%;
+}
+
+.lower-container {
+    height: 110vw;
+    width: 80%;
+    border: 1px solid black;
+    border-top: 2px solid black;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: scroll;
+    background-color: rgba(240, 240, 240, 0.9);
+}
+
+.bookmark-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(95, 95, 95, 0.856);
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 2px solid black;
+    padding: 5px;
+}
+
+.title-container {
+    color: white;
+    font-size: large;
+    max-width: 65%
+}
+
+.rating-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex;
+    width: 90px;
+}
+
+.null-rating {
+    color: white;
+    width: 75px;
+}
+
+.rating-display {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Full_Star_Yellow.svg/64px-Full_Star_Yellow.svg.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 18px;
+}
+
+.info-container {
+    background-color: rgba(231, 231, 231, 0.9);
+}
+
+.top-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(182, 181, 181, 0.9);
+}
+
+.top-info-url-container {
+    width: 70%;
+    padding: 10px;
+}
+
+.info-button {
+    width: 80%;
+    height: 80%;
+    display: inline-block;
+    color: black;
+    background-color: rgb(249,249,249);
+    text-decoration: none;
+    text-align: center;
+    border: 1px solid black;
+    border-color: rgb(216, 216, 216) rgb(209, 209, 209) rgb(186, 186, 186) rg(207, 207, 207);
+    padding: 2px;
+}
+
+.info-controls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 30%;
+    margin-right: 15px;
+}
+
+.info-edit-button {
+    width: 70px;
+    margin-bottom: 5px;
+}
+
+.info-delete-button {
+    width: 70px;
+}
+
+.bottom-info {
+    height: 30vw;
+    padding: 5px;
+    overflow: scroll;
+    border-top: 1px solid black;
+    border-bottom: 2px solid black;
+    background-color: rgba(212, 212, 212, 0.9);
+}
+
+.creator-upper-container {
+    width: 80%;
+    height: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: visible;
+} 
+
+.creator-page-url {
+    width: 100%;
+    height: 35px;
+}
+
+.creator-lower-container {
+    height: 100vw;
+    width: 80%;
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(211, 211, 211, 0.85);
+    /* box-shadow: 2px 4px; */
+}
+
+.lower-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    vertical-align: middle;
+    height: 13vw;
+    padding: 5px;
+    border: 1px solid black;
+    border-bottom: 2px solid black;
+    background-color: rgba(95, 95, 95, 0.856);
+}
+
+.creator-page-title {
+    width: 70%;
+    height: 28px;
+    vertical-align: middle;
+    font-size: large;
+    padding-top: 2px;
+    margin: auto;
+    /* box-shadow: 1px 2px; */
+}
+
+.lower-bottom {
+    margin: 15px;
+    margin-top: 10px;
+    height: 80%;
+    background-color: white;
+    /* background-color: rgba(212, 212, 212, 0.85); */
+}
+
+.creator-rating {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 12vw;
+    padding-right: 5px;
+    border: 2px solid black;
+    padding: 3px;
+    background-color: rgba(95, 95, 95, 0.856);
+    /* box-shadow: 1px 2px; */
+}
+
+.add-rating {
+    width: 0;
+    height: 0;
+}
+
+.creator-rating input[type="radio"]:checked+label {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Full_Star_Yellow.svg/64px-Full_Star_Yellow.svg.png');
+}
+
+.creator-rating input[type="radio"]:hover+label {
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Full_Star_Yellow.svg/64px-Full_Star_Yellow.svg.png');
+    cursor: pointer;
+}
+
+.rating-count {
+    display: flex;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Empty_Star.svg/64px-Empty_Star.svg.png');
+    vertical-align: middle;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    width: 40px;
+    padding-top: 3px;
+    padding-left: 3px;
+    cursor: pointer;
+    font-size: small;
+    font-weight: bold;
+}
+
+p {
+    margin: auto;
+}
+
+textarea {
+    width: 100%;
+    height: 67vw;
+    font-size: medium;
+    resize: none;
+}
+
+.creator-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 12vw;
+}
+
+.cancel-button {
+    width: 47%;
+}
+
+.create-button {
+    width: 47%;
+}
+
+.hidden {
+    display: none;
+}
+
+.creator-error-message {
+    position: fixed;
+    text-align: center;
+    right: 10px;
+    top: 20px;
+    width: 110px;
+    border: 1px solid black;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    padding: 4px;
+    font-size: small;
+}
+
+.edit-button {
+    width: 47%;
+}
+
+@media screen and (min-width: 430px) {
+    main {
+        width: 430px;
+        height: 540px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .lower-container {
+       height: 500px; 
+    }
+
+    .creator-lower-container {
+        height: 430px;
+    }
+
+    .creator-button-container {
+        height: 50px;
+    } 
+
+    .lower-top {
+        height: 50px;
+    }
+
+    .creator-rating {
+        height: 50px;
+    }
+
+    .creator-description {
+        height: 288px;
+    }
+
+    .top-info {
+        height: 85px;
+    }
+
+    .bottom-info {
+        height: 125px;
+    }
+
+    .info-url-button { 
+        height: 65px;
+    }
+}

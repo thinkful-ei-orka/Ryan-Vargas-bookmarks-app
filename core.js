@@ -24,7 +24,7 @@ function generateMainContentStructure(bookmarks) {
             if(bookmark.rating !== null) {
                 rating = bookmark.rating;
                 for(let i = 1; i <= rating; i++) {
-                    ratingStructure += `<div class="rating-display"</div>`
+                    ratingStructure += `<div class="rating-display"></div>`
                 }
             } else {
                 ratingStructure = `<div class="null-rating">No Rating</div>`;
@@ -40,7 +40,7 @@ function generateMainContentStructure(bookmarks) {
                     <div class="info-container" data-bookmark-id="${bookmark.id}">
                         <div class="top-info">
                             <div class="top-info-url-container">
-                                <button onclick="window.location.href = '${bookmark.url}';" class="info-button">Visit Site</button>
+                            <a href="${bookmark.url}" class="info-button" target="_blank">Visit Site</a>
                             </div>
                             <div class="info-controls">
                                 <button class="info-edit-button">Edit</button>
@@ -58,7 +58,7 @@ function generateMainContentStructure(bookmarks) {
                 <div class="main-container">
                     <div class="bookmark-container">
                         <div class="title-container">${bookmark.title}</div>
-                        <div class="rating-container>${ratingStructure}</div>
+                        <div class="rating-container">${ratingStructure}</div>
                     </div>
                     <div class="info-container" data-bookmark-id="${bookmark.id}"</div>
                 </div>
@@ -71,7 +71,7 @@ function generateMainContentStructure(bookmarks) {
             <div class="upper-container">
                 <button class="new-bookmark-button">Add Bookmark</button>
                 <select name="filter-menu" class="bookmark-filter-menu">
-                    <option disabled selected>Filter By:</option>
+                    <option disabled selected>Show Only:</option>
                     <option value="0">Display All</option>
                     <option value="1">1 Star Minimum</option>
                     <option value="2">2 Star Minimum</option>
@@ -119,7 +119,7 @@ function generateCreatorControls(bookmark) {
             checked = 'checked';
         }
         ratingValue += `<input type="radio" name="rating" class="add-rating" id="rating${i}" value="${i}" ${checked}>
-        <label class="rating-count" for="rating${i}"> <p>${i}</p> </label>`
+                        <label class="rating-count" for="rating${i}">${i}</label>`
     }
 
     let generateStructure = `
@@ -135,6 +135,7 @@ function generateCreatorControls(bookmark) {
                 </div>
                 <div class="lower-bottom">
                     <div class="creator-rating">
+                        <p>Choose Rating</p>
                         ${ratingValue}
                     </div>
                     <textarea name="description" class="creator-description" placeholder="Description" required>${description}</textarea>
