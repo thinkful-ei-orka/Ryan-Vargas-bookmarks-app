@@ -1,6 +1,10 @@
 import store from './store.js';
 import api from './api.js';
 
+//I'm aware that with regards to error handling, this code is not very DRY
+//but as it's not a requirement of the assignment and I'm already running late
+//turning this in, I figured I would leave it at what I'd written earlier for now.
+
 function generateMainContentStructure(bookmarks) {
     let bookmarkStructure = '';
     let description = ''
