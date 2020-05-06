@@ -1,3 +1,5 @@
+//will eventually add universal error handling here
+
 'use strict';
 const BASE_URL = 'https://thinkful-list-api.herokuapp.com/kieran-v';
 

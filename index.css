@@ -23,6 +23,7 @@ h1 {
     justify-content: space-between;
     width: 80%;
     height: 50px;
+    background-color: grey;
     margin-left: auto;
     margin-right: auto;
     padding: 4px;
