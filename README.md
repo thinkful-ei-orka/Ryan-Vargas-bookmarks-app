@@ -1,8 +1,8 @@
 I've written this code to comply with the user stories and technical requirements detailed below:
 
-User Stories
+**User Stories
 
-As a user:
+*As a user:
 
 I can add bookmarks to my bookmark list. Bookmarks contain:
 
@@ -32,7 +32,7 @@ I can select from a dropdown (a <select> element) a "minimum rating" to filter t
 
 (Extension feature - optional) I can edit the rating and description of a bookmark in my list
 
-Technical Requirements
+**Technical Requirements
 
 Use fetch for AJAX calls and jQuery for DOM manipulation
 
