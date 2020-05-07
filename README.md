@@ -57,5 +57,3 @@ Use a responsive and mobile-first design
 Visually and functionally solid in viewports for mobile and desktop
 
 Follow a11y best practices
-
-Refer back to the lessons on accessibility, forms
